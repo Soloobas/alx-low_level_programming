@@ -1,15 +1,14 @@
 #include <stdio.h>
 
 /**
- * main - Prints numbers from 0 to 9.
- *
+ * main - prints the alphabet in reverse order
  * Return: Always 0 (Success)
  */
 int main(void)
 {
 	int i;
 
-	for (i = 122; i < 97; i++)
+	for (i = 122; i >= 97; i--)
 	{
 		putchar(i);
 	}
