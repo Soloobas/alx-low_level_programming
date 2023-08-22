@@ -15,16 +15,16 @@ int main(void)
 	sum = 0;
 	srand(time(0));
 
-	for (i = 0; i < 100; i++)
+	for (i = 0; i < 99; i++)
 	{
-		pass[i] = rand() % 78 + '0';
+		pass[i] = rand() % ('9' - '0' + 1) + '0';
 		sum += pass[i];
 	}
 
 	n = 2772 - sum;
-	pass[i] = n;
+	pass[99] = n;
 
-	printf("%s", pass);
+	printf("%s\n", pass);
 
 	return (0);
 }
